@@ -1,0 +1,95 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "foe:textures/foelogo3.png",
+            "posX" : -104,
+            "posY" : -100,
+            "width" : 200,
+            "height" : 90,
+			"alignment" : "center"
+        }
+    },
+   
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : 4,
+            "posY" : -25,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+       
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -165,
+            "posY" : 15,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "5.9.12.156:25575"
+            }
+        },
+           
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -53,
+            "posY" : 15,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+       
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 59,
+            "posY" : 15,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        }
+    },
+   
+    "texts":
+    {
+    },
+   
+    "other":
+    {
+       
+        "background":
+        {
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["foe:textures/foemenu.png","foe:textures/foemenu2.jpg","foe:textures/foemenu3.png"],
+                "displayDuration" : 200,
+                "fadeDuration" : 40
+            }
+        }
+    }
+}
